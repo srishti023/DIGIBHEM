@@ -160,4 +160,65 @@ button#equal {
     background-color: #223323;
     color: #ffffff;
   }
-  
+  /* Responsive adjustments */
+@media (max-width: 600px) {
+    #display {
+        font-size: 1.5em;
+        height: 120px;
+    }
+    
+    button {
+        height: 50px;
+        width: 50px;
+        font-size: 1em;
+    }
+    
+    button#equal {
+        height: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .calculator {
+        padding: 10px;
+        max-width: 100%;
+    }
+    
+    #display {
+        font-size: 1.2em;
+        height: 100px;
+    }
+    
+    button {
+        height: 50px;
+        width: 50px;
+        font-size: 1em;
+    }
+    
+    button#equal {
+        height: 100px;
+    }
+}
+
+/* Make it fit well on smaller screens like iPhone 12 */
+@media (max-width: 414px) {
+    .calculator {
+        max-width: 90%;
+        height: auto; /* Ensure it adjusts based on content */
+    }
+    
+    #display {
+        font-size: 1.2em;
+        height: 120px;
+    }
+    
+    button {
+        height: 55px;
+        width: 55px;
+        font-size: 1.1em;
+    }
+    
+    button#equal {
+        height: 110px;
+    }
+}
