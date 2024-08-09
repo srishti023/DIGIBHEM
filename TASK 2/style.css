@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 body {
     font-family: Roboto;
-    background-image: url('https://img.freepik.com/free-photo/tropical-hotel-holiday-background-resort_1203-4943.jpg?t=st=1723213847~exp=1723217447~hmac=aa59de30ad40230e9189a35d2a8c557d105c5f21bd2bd096a0c9160543bb53e0&w=996');
+    background-image: url('https://images.unsplash.com/photo-1506059612708-99d6c258160e?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -21,9 +21,9 @@ h1{
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 0 100px rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.196); /* Semi-transparent background */
-    backdrop-filter: blur(5px); /* Blur effect */
-    -webkit-backdrop-filter: blur(5px); /* Safari compatibility */
+    background-color: rgba(255, 255, 255, 0.094); 
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px);
 }
 .form-group {
     margin-bottom: 15px;
