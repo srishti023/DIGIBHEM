@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Hotel Booking Registration</h1>
+        <form id="bookingForm">
+            <!-- Customer Info -->
+            <div class="form-group">
+                <label for="name">Customer Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="checkin">Check-in Date</label>
+                <input type="date" id="checkin" name="checkin" required>
+            </div>
+            <div class="form-group">
+                <label for="totalDays">Total Days</label>
+                <input type="number" id="totalDays" name="totalDays" required>
+            </div>
+            <div class="form-group">
+                <label for="totalPersons">Total Persons</label>
+                <input type="number" id="totalPersons" name="totalPersons" required>
+            </div>
+
+            <!-- Room Info -->
+            <div class="form-group">
+                <label for="roomType">Room Type</label>
+                <select id="roomType" name="roomType" required>
+                    <option value="">Select Room Type</option>
+                    <option value="delux">Delux</option>
+                    <option value="suite">Suite</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Amenities</label>
+                <input type="checkbox" id="ac" name="ac" value="ac"> AC
+                <input type="checkbox" id="locker" name="locker" value="locker"> Locker
+            </div>
+
+            <!-- Room Rates -->
+            <div class="form-group">
+                <label for="advanceAmount">Advance Amount</label>
+                <input type="number" id="advanceAmount" name="advanceAmount" required>
+            </div>
+
+            <!-- Output -->
+            <div class="form-group">
+                <label for="totalCost">Total Cost</label>
+                <input type="text" id="totalCost" name="totalCost" readonly>
+            </div>
+            <div class="form-group">
+                <label for="balance">Balance</label>
+                <input type="text" id="balance" name="balance" readonly>
+            </div>
+
+            <div class="form-group">
+                <button type="button" onclick="calculateCost()">Calculate</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
